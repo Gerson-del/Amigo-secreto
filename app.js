@@ -4,6 +4,7 @@
 // primero creamos un array para los nombres
 let amigos = [];
 
+resultado = document.getElementById("resultado");
 
 // Creamos una funcion para  agregar amigos:
 function agregarAmigo(){
@@ -24,3 +25,22 @@ function agregarAmigo(){
     
 }
 
+function sortearAmigo(){
+    // antes de todo comprobar que el array amigos no esta vacio :3
+
+    size_amigos = amigos.length
+
+    if (amigos.length == 0){
+        alert("No has agregado ningun amigo ");
+    }
+
+    else{
+        // Esto te da un indice random
+        randomIndex = Math.floor(Math.random() * size_amigos);  
+        // con esta linea de codigo obtienes un nombre aleatorio de la lista
+        nombre_aleatorio = amigos[randomIndex];
+        // Esta linea de codigo te muestra el resultado en pantalla
+        resultado.innerHTML = `Tu amigo secreto es ${nombre_aleatorio}`;
+        
+    }
+}
