@@ -64,11 +64,6 @@ function sortearAmigo(){
 
         let nombreAleatorio = amigos[indiceAleatorio];
 
-        console.log(indiceAleatorio);
-
-        console.log(amigos[indiceAleatorio]);
-
-
         resultado.innerHTML = nombreAleatorio; 
 
     }
