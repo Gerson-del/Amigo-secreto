@@ -46,10 +46,6 @@ function actualizarListaAmigos(){
 }
 
 
-// Creamos una funcion para sortear los amigos
-// validar que haya amigos disponibles
-// Obtener el nombre sorteado
-// Mostrar el nombre sorteado
 
 
 function sortearAmigo(){
@@ -64,7 +60,7 @@ function sortearAmigo(){
 
         let nombreAleatorio = amigos[indiceAleatorio];
 
-        resultado.innerHTML = nombreAleatorio; 
+        resultado.innerHTML = `Tu amigo secreto es ${nombreAleatorio}`;
 
     }
 
